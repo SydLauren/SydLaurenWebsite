@@ -7,9 +7,9 @@ const BlogPost = () => {
   return (
     <section>
       <h1>{posts[postId].title}</h1>
-      <pre>{posts[postId].body}</pre>
+      <p dangerouslySetInnerHTML={{ __html: posts[postId].body }} />
     </section>
-  )
-}
+  );
+};
 
 export default BlogPost;

@@ -5,7 +5,7 @@ import './landing.css';
 
 const LandingPage = () => {
   return (
-    <section className={"landing-section"}>
+    <section className={'main-section'}>
       <Title />
       <Navigation />
     </section>

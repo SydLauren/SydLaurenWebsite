@@ -8,7 +8,7 @@ const Listing = () => {
   return (
     <section>
       {Object.keys(posts).map(postId => {
-        return <Link to={`${match.url}/${postId}`}>{posts[postId].title}</Link>
+        return <p key={postId}><Link to={`${match.url}/${postId}`}>{posts[postId].title}</Link> - {posts[postId].date}</p>
       })}
     </section>
   )
