@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Navigation from './Navigation';
-import './landing-page.css';
+import './landing.css';
 
 const LandingPage = () => {
   return (

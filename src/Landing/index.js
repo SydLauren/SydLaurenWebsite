@@ -1,7 +1,7 @@
 import React from 'react';
 import LandingPageV1 from './v1';
 
-const LandingPage = ({ version }) => {
+const Landing = ({ version }) => {
   let landingEl;
   switch(version) {
     case('v1'):
@@ -15,4 +15,4 @@ const LandingPage = ({ version }) => {
   return landingEl;
 }
 
-export default LandingPage;
+export default Landing;
