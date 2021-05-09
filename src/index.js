@@ -4,9 +4,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 import SydLaurenV1 from './v1';
 import SydLaurenV2 from './v2';
+
+const CURRENT_VERSION = 'v2';
 
 ReactDOM.render(
   <Router>
@@ -17,9 +20,7 @@ ReactDOM.render(
       <Route path='/v2'>
         <SydLaurenV2 />
       </Route>
-      <Route path='/'>
-        <SydLaurenV2 />
-      </Route>
+      <Redirect from="/" to={`/${CURRENT_VERSION}`} />
     </Switch>
   </Router>,
   document.getElementById('root')
