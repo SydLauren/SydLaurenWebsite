@@ -1,15 +1,15 @@
 :root {
-  --gray: #32373b;
-  --gray2: #4A5859;
-  --pink: #F4D6CC;
-  --gold: #F4B860;
-  --red: #C83E4D;
+  --gray: #E6E6EA;
+  --gray2: #F4F4F8;
+  --red: #FE4A49;
+  --gold: #FED766;
+  --blue: #009FB7;
   font-size: 10px;
 }
 
 .AppContainer {
   display: flex;
-  background-color: var(--gray);
+  background-color: var(--gray2);
   color: var(--pink);
   width: 100vw;
   height: 100vh;

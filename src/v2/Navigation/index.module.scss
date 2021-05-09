@@ -1,25 +1,62 @@
 .Navigation {
-  height: 100vh;
+  margin: 50px;
+  height: 580px;
   width: 100px;
   display: grid;
-  grid-template-areas: " . " "link1" "link2" ".";
-  grid-template-rows: auto 100px 100px auto;
+  grid-template-areas: "key1" "key2" "key3" "key4" "key5";
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
   row-gap: 20px;
   align-items: center;
   justify-content: center;
   background-color: var(--red);
+  border: 30px solid var(--red);
+  border-radius: 15px;
+  box-shadow: 7px 6px 5px 0 #c2c2c2;
 }
 
 .button {
   transform: rotate(270deg);
   font-size: 2rem;
-  color: var(--gold);
+  color: var(--blue);
 }
 
-.blog {
-  grid-area: link1;
+.key1 {
+  grid-area: key1;
+}
+.key2 {
+  grid-area: key2;
+}
+.key3 {
+  grid-area: key3;
+}
+.key4 {
+  grid-area: key4;
+}
+.key5 {
+  grid-area: key5;
 }
 
-.sandbox {
-  grid-area: link2;
+
+.key {
+  width: 80px;
+  height: 85px;
+  border-width: 10px 20px 25px;
+  border-radius: 4px;
+  border-style: solid;
+  background: #d8d8d8;
+  border-color: #f0f0f0 #dddddd #c2c2c2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace;
+  text-align: center;
+  color: darkslategrey;
+  box-shadow: inset 7px 6px 10px 0 #d3d3d3;
+  position: relative;
+  &:hover {
+    transform: scale(0.97);
+  }
 }

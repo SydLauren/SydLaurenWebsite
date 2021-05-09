@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import appClass from './index.module.scss';
 import { VERSION } from './constants';
 import Navigation from './Navigation';
@@ -28,7 +24,7 @@ const SydLaurenV1 = () => {
         </Switch>
       </Router>
     </div>
-  )
-}
+  );
+};
 
 export default SydLaurenV1;
