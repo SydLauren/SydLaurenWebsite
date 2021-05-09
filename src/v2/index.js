@@ -4,14 +4,16 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import './index.css';
+import appClass from './index.module.scss';
 import { VERSION } from './constants';
+import Navigation from './Navigation';
 import LandingPage from './Landing';
 import Blog from './Blog';
 
 const SydLaurenV1 = () => {
   return (
-      <React.StrictMode>
+    <div className={appClass.AppContainer}>
+      <Navigation />
       <Router>
         <Switch>
           <Route path={`/${VERSION}/blogs/:blogId`}>
@@ -25,7 +27,7 @@ const SydLaurenV1 = () => {
           </Route>
         </Switch>
       </Router>
-    </React.StrictMode>
+    </div>
   )
 }
 

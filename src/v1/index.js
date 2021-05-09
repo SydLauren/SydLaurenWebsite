@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import './index.css';
+import './index.module.scss';
 import LandingPage from './Landing';
 import Blog from './Blog';
 

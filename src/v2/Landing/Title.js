@@ -1,14 +1,15 @@
 import React from 'react';
+import { title, subtitle } from './landing.module.scss';
 
 const Title = () => {
   return (
     <section>
-      <h1 className={'main-title'}>
+      <h1 className={title}>
         Hi,
         <br />
         I'm Sydney Lauren BUTTS
       </h1>
-      <p className={'landing-subtitle'}>Welcome to my website 🔥</p>
+      <p className={subtitle}>Welcome to my website 🔥</p>
     </section>
   );
 };

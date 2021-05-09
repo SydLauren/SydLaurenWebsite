@@ -1,11 +1,11 @@
 import React from 'react';
 import Title from './Title';
 import Navigation from './Navigation';
-import './landing.css';
+import { mainSection } from '../index.module.scss';
 
 const LandingPage = () => {
   return (
-    <section className={'main-section'}>
+    <section className={mainSection}>
       <Title />
       <Navigation />
     </section>

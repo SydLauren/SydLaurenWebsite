@@ -1,13 +1,11 @@
 import React from 'react';
 import Title from './Title';
-import Navigation from './Navigation';
-import './landing.css';
+import { landing } from './landing.module.scss';
 
 const LandingPage = () => {
   return (
-    <section className={'main-section'}>
+    <section className={landing}>
       <Title />
-      <Navigation />
     </section>
   );
 };

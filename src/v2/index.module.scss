@@ -1,0 +1,33 @@
+:root {
+  --gray: #32373b;
+  --gray2: #4A5859;
+  --pink: #F4D6CC;
+  --gold: #F4B860;
+  --red: #C83E4D;
+  font-size: 10px;
+}
+
+.AppContainer {
+  display: flex;
+  background-color: var(--gray);
+  color: var(--pink);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  button {
+    background: none;
+    border: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
