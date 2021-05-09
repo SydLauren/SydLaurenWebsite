@@ -9,18 +9,19 @@ import LandingPage from './Landing';
 import Blog from './Blog';
 
 const SydLaurenV1 = () => {
+  const VERSION = 'v1'
   return (
       <React.StrictMode>
       <Router>
         <Switch>
-          <Route path='blogs/:blogId'>
+          <Route path={`/${VERSION}/blogs/:blogId`}>
             <Blog />
           </Route>
-          <Route path='/blogs'>
-            <Blog version={'v1'} />
+          <Route path={`/${VERSION}/blogs`}>
+            <Blog />
           </Route>
-          <Route path='/'>
-            <LandingPage version={'v1'} />
+          <Route path={`/${VERSION}`}>
+            <LandingPage />
           </Route>
         </Switch>
       </Router>

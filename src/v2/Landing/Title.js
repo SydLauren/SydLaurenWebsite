@@ -6,7 +6,7 @@ const Title = () => {
       <h1 className={'main-title'}>
         Hi,
         <br />
-        I'm Sydney Lauren Flak
+        I'm Sydney Lauren BUTTS
       </h1>
       <p className={'landing-subtitle'}>Welcome to my website 🔥</p>
     </section>

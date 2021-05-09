@@ -1,18 +1,15 @@
 import React from 'react';
-import LandingPageV1 from './v1';
+import Title from './Title';
+import Navigation from './Navigation';
+import './landing.css';
 
-const Landing = ({ version }) => {
-  let landingEl;
-  switch(version) {
-    case('v1'):
-      landingEl = <LandingPageV1 />;
-      break;
-    default:
-      landingEl = <p>Ah boogers..</p>;
-      break;
-  }
+const LandingPage = () => {
+  return (
+    <section className={'main-section'}>
+      <Title />
+      <Navigation />
+    </section>
+  );
+};
 
-  return landingEl;
-}
-
-export default Landing;
+export default LandingPage;

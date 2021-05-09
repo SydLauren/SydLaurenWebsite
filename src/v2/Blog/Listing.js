@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
-import posts from '../blogs/posts.json';
+import posts from './blogs/posts.json';
 
 const Listing = () => {
   let match = useRouteMatch();

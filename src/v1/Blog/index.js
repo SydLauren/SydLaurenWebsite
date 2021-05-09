@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import Listing from './Listing';
 import BlogPost from './Blog';
+import { VERSION } from '../constants';
 
 const Blog = () => {
   const match = useRouteMatch();
@@ -17,7 +18,7 @@ const Blog = () => {
       <ul>
         <li>
           <button>
-            <Link to={'/'}>Home</Link>
+            <Link to={`/${VERSION}`}>Home</Link>
           </button>
         </li>
       </ul>
@@ -27,7 +28,7 @@ const Blog = () => {
             <ul>
               <li>
                 <button>
-                  <Link to={'/blogs'}>Back to Blogs</Link>
+                  <Link to={`/${VERSION}/blogs`}>Back to Blogs</Link>
                 </button>
               </li>
             </ul>
