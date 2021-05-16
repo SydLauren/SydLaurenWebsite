@@ -4,9 +4,7 @@
 .AppContainer {
   display: grid;
   grid-template-areas: "navigation content";
-  grid-template-columns: 14% 86%;
-  background-color: $gray2;
-  color: $red;
+  grid-template-columns: 240px auto;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -24,5 +22,9 @@
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  @include respond-to('small') {
+    grid-template-columns: 120px auto;
   }
 }

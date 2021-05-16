@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.5em;
   font-weight: 600;
   font-family: monospace;
   text-align: center;
@@ -96,7 +96,7 @@
     height: 65px;
     border-width: 8px 13px 17px;
     border-radius: 3px;
-    font-size: 12px;
+    // font-size: 12px;
   }
 
   @include respond-to('small') {
@@ -104,7 +104,7 @@
     height: 42px;
     border-width: 5px 10px 12px;
     border-radius: 2px;
-    font-size: 9px;
+    // font-size: 9px;
   }
 
 }

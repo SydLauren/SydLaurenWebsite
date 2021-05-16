@@ -1,0 +1,18 @@
+@import '../sass/global';
+
+.blogEntry {
+  font-size: 1.8em;
+  color: $gray3;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.blog {
+  font-size: 2em;
+  color: $gray3;
+}
+
+.blogSection {
+  padding: 50px 50px 0 0;
+}

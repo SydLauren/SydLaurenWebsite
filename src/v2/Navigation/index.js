@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import cx from 'classnames';
 import { VERSION } from '../constants';
 import navStyles from './index.module.scss';
 
 const Navigation = () => {
-  const match = useRouteMatch();
   return (
     <section className={navStyles.NavSection}>
       <div className={navStyles.Navigation}>

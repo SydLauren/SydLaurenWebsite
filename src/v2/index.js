@@ -12,7 +12,7 @@ const SydLaurenV1 = () => {
       <div className={appClass.AppContainer}>
         <Navigation />
           <Switch>
-            <Route path={`/${VERSION}/blogs/:blogId`}>
+            <Route path={`/${VERSION}/blogs/:postId`}>
               <Blog />
             </Route>
             <Route path={`/${VERSION}/blogs`}>

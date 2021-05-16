@@ -1,0 +1,23 @@
+.heading1 {
+  font-size: 6em;
+
+  @include respond-to('small') {
+    font-size: 2em;
+  }
+}
+
+.heading2 {
+  font-size: 5em;
+  color: $blue;
+  @include  respond-to('small') {
+    font-size: 2em;
+  }
+}
+
+.textLink {
+  font-size: 1.2em;
+  color: $red;
+  &:hover {
+    text-decoration: underline;
+  }
+}
