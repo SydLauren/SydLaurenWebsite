@@ -13,8 +13,8 @@ import { VERSION } from '../constants';
 const Blog = () => {
   const match = useRouteMatch();
   return (
-    <section className={'main-section'}>
-      <h1 className={'main-title'}>My Blog</h1>
+    <section style={{ padding: '50px'}}>
+      <h1 style={{ fontSize: '3em'}}>My Blog</h1>
       <ul>
         <li>
           <button>

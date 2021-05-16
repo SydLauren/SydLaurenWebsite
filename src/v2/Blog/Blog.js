@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Breadcrumbs from '../components/breadcrumbs';
-import posts from './blogs/posts.json'
+import { posts } from './blogs/posts'
 import { VERSION } from '../constants';
 import blogStyles from './blog.module.scss';
 

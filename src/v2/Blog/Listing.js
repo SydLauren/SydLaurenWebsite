@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import Breadcrumbs from '../components/breadcrumbs';
 import { VERSION } from '../constants';
-import posts from './blogs/posts.json';
+import { posts } from './blogs/posts';
 import blogStyles from './blog.module.scss';
 
 const Listing = () => {

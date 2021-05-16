@@ -1,0 +1,20 @@
+.switchContainer {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FED766;
+  z-index: 100;
+}
+
+.versionButton {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #fce7a7;
+  }
+}
