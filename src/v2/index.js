@@ -8,22 +8,22 @@ import Blog from './Blog';
 
 const SydLaurenV1 = () => {
   return (
-    <div className={appClass.AppContainer}>
-      <Navigation />
-      <Router>
-        <Switch>
-          <Route path={`/${VERSION}/blogs/:blogId`}>
-            <Blog />
-          </Route>
-          <Route path={`/${VERSION}/blogs`}>
-            <Blog />
-          </Route>
-          <Route path={`/${VERSION}`}>
-            <LandingPage />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <div className={appClass.AppContainer}>
+        <Navigation />
+          <Switch>
+            <Route path={`/${VERSION}/blogs/:blogId`}>
+              <Blog />
+            </Route>
+            <Route path={`/${VERSION}/blogs`}>
+              <Blog />
+            </Route>
+            <Route path={`/${VERSION}`}>
+              <LandingPage />
+            </Route>
+          </Switch>
+      </div>
+    </Router>
   );
 };
 
