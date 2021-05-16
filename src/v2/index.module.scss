@@ -1,16 +1,12 @@
-:root {
-  --gray: #E6E6EA;
-  --gray2: #F4F4F8;
-  --red: #FE4A49;
-  --gold: #FED766;
-  --blue: #009FB7;
-  font-size: 10px;
-}
+@import './sass/global';
+
 
 .AppContainer {
-  display: flex;
-  background-color: var(--gray2);
-  color: var(--pink);
+  display: grid;
+  grid-template-areas: "navigation content";
+  grid-template-columns: 14% 86%;
+  background-color: $gray2;
+  color: $red;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -30,4 +26,3 @@
     color: inherit;
   }
 }
-

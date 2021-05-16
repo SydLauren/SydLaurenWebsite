@@ -1,9 +1,10 @@
 import React from 'react';
-import { title, subtitle } from './landing.module.scss';
+import { title, subtitle, card, landingArea } from './landing.module.scss';
 
 const Title = () => {
   return (
-    <section>
+    <section className={landingArea}>
+      <div className={card}></div>
       <h1 className={title}>
         Hi,
         <br />

@@ -1,23 +1,54 @@
+@import '../sass/global';
+
+.NavSection {
+  padding: 50px 0 0 50px;
+  grid-area: navigation;
+
+  @include respond-to('small') {
+    padding: 30px 0 0 20px;
+  }
+}
+
 .Navigation {
-  margin: 50px;
   height: 580px;
-  width: 100px;
+  width: 85px;
   display: grid;
   grid-template-areas: "key1" "key2" "key3" "key4" "key5";
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   row-gap: 20px;
   align-items: center;
   justify-content: center;
-  background-color: var(--red);
-  border: 30px solid var(--red);
+  background-color: $red;
+  border: 30px solid $red;
   border-radius: 15px;
   box-shadow: 7px 6px 5px 0 #c2c2c2;
+
+  @include respond-to('medium') {
+    height: 410px;
+    width: 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    row-gap: 15px;
+    border: 20px solid $red;
+    border-radius: 12px;
+    box-shadow: 4px 3px 3px 0 #c2c2c2;
+  }
+
+  @include respond-to('small') {
+    height: 278px;
+    width: 50px;
+    grid-template-rows: 47px 47px 47px 47px 47px 47px;
+    row-gap: 10px;
+    border: 15px solid $red;
+    border-radius: 7px;
+    box-shadow: 4px 3px 3px 0 #c2c2c2;
+  }
+
 }
 
 .button {
   transform: rotate(270deg);
   font-size: 2rem;
-  color: var(--blue);
+  color: $blue;
 }
 
 .key1 {
@@ -59,4 +90,21 @@
   &:hover {
     transform: scale(0.97);
   }
+
+  @include respond-to('medium') {
+    width: 60px;
+    height: 65px;
+    border-width: 8px 13px 17px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  @include respond-to('small') {
+    width: 40px;
+    height: 42px;
+    border-width: 5px 10px 12px;
+    border-radius: 2px;
+    font-size: 9px;
+  }
+
 }
